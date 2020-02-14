@@ -1,150 +1,125 @@
-picOne{
-    position: absolute;
-    width: 214px;
-    height: 131px;
-    left: 278px;
-    top: 3249px;
 
-    background: #353535;
-}
-picTwo{
-    position: absolute;
-    width: 214px;
-    height: 131px;
-    left: 523px;
-    top: 3249px;
 
-    background: #353535;
-}
-picThree{
-    position: absolute;
-    width: 214px;
-    height: 131px;
-    left: 768px;
-    top: 3249px;
+/*this code is magic, allows main image to be resized*/
 
-    background: #353535;
+body{
+    margin-right:20%;
+    margin-left:20%;
 }
 
-picFour{
-    position: absolute;
-    width: 214px;
-    height: 131px;
-    left: 278px;
-    top: 3407px;
-
-    background: #353535;
+.grid
+ {
+  display: grid;
+  grid-template-columns: repeat(3,214px);  /* 3 columns, 214 is the width */
+  grid-template-rows: repeat(2,131px); /* 2 rows, 131px is the hight  */
+  grid-gap:35px 25px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+  max-width: 100%
+  height: auto;
 }
-picFive{
-    position: absolute;
-    width: 214px;
-    height: 131px;
-    left: 523px;
-    top: 3407px;
 
-    background: #353535;
+/*make div class="grid-item if you want a gray border around it*/
+.grid-item{
+  border:thin gray solid;
+  padding:10px;
 }
-picSix{
-    position: absolute;
-    width: 214px;
-    height: 131px;
-    left: 768px;
-    top: 3407px;
 
-    background: #353535;
+
+img{
+    width: 100%;
+    max-width:704px;
+    max-height:193px;
 }
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+    align-items: center;
+}
+
+
 .position{
-    position: absolute;
-    width: 704px;
-    height: 314px;
+    /*position: absolute;
+    height: 314px;*/
+    /*width: 704px;*/
     left: 276px;
     top: 2981px;
 
 }
 .positionExtra{
-    position: absolute;
+    /*position: absolute;*/
     width: 704px;
     height: 314px;
     left: 276px;
     top: 4000px;
 
 }
+
 .header{
     font-family: Muli;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
     line-height: 25px;
-
     color: #FFF598;
-
 }
-.body
-{
+
+.body{
     font-family: Muli;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    /*font-size: 20px; . . . this code makes the font unscalable*/ 
+    /*this thing makes the font size work*/
+    font-size: 3vmin;
     line-height: 25px;
-
     color: white;
-
 }
 
+div{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
 
-mainPic{
-    position: absolute;
-    width: 704px;
-    height: 193px;
-    left: 276px;
-    top: 2752px;
-
-    background: #353535;
+p{
+    word-wrap: break-word;
+    /*display:flex;*/
+    /*flex-flow: wrap;*/
+    
+    line-height: 25px;
+    overflow-wrap: break-word;
+    font-size: 4vmin;
 }
 
 h1{
-   position: absolute;
-    width: 293px;
+   /*position: absolute;*/
+    /*width: 293px;
     height: 72px;
     left: 276px;
-    top: 2596px;
+    top: 2596px;*/
     
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 5vmin;
     line-height: 72px;
    /* identical to box height */
     
     
     color:#FFF598;
 }
-hr{
-    position:absolute;
-    width: 4947.02px;
-    height: 0px;
-    left:-2320px;
-    top: 2000px;
 
-    border: 3px solid #AFAFAF;
-    transform: matrix(0, -1, 1, 0, 0, 0);
-}
-.dotOne{
-    position: absolute;
-    width: 28.6px;
-    height: 28.6px;
-    left: 143px;
-    top: 2649.4px;
-    border-radius: 50%;
-    background: #C4C4C4;
+
+#resources{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.dotTwo{
-    position: absolute;
-    width: 28.6px;
-    height: 28.6px;
-    left: 143px;
-    top: 3683.4px;
-    border-radius: 50%;
-    background: #C4C4C4;
+#resources > img{
+    width: 300px;
+    padding: 5px;
 }
+
+
+
